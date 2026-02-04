@@ -11,7 +11,7 @@ export default function Login() {
     let navigate = useNavigate();
     const { setUser } = useAppContext()
 
-    async function tryLogin(formData){
+    async function tryLogin(formData : any){
         const email = formData.get("email");
         const password = formData.get("password");
 
